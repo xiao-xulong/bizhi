@@ -71,7 +71,7 @@ export default {
       });
       if (map1.get(Number(userId.value.trim()))) {
         if (
-          map1.get(Number(userId.value.trim())) == password.value.trim() ||
+          map1.get(Number(userId.value.trim())) == password.value.trim() &&
           userId.value == 123
         ) {
           sessionStorage.setItem("angle", "Yan");
