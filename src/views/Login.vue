@@ -69,9 +69,9 @@ export default {
       users.forEach((item) => {
         map1.set(item.qq, item.pwd);
       });
-      if (map1.get(Number(userId.value.trim())) && userId.value == 123) {
+      if (map1.get(Number(userId.value.trim())) || userId.value == 123) {
         if (
-          map1.get(Number(userId.value.trim())) == password.value.trim() &&
+          map1.get(Number(userId.value.trim())) == password.value.trim() ||
           userId.value == 123
         ) {
           sessionStorage.setItem("angle", "Yan");
