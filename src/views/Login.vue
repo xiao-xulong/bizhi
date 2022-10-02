@@ -70,7 +70,10 @@ export default {
         map1.set(item.qq, item.pwd);
       });
       if (map1.get(Number(userId.value.trim())) && userId.value == 123) {
-        if (map1.get(Number(userId.value.trim())) == password.value.trim()) {
+        if (
+          map1.get(Number(userId.value.trim())) == password.value.trim() &&
+          userId.value == 123
+        ) {
           sessionStorage.setItem("angle", "Yan");
           localStorage.setItem("userId", userId.value);
           localStorage.setItem("wingKey", password.value);
