@@ -51,7 +51,8 @@ export default {
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
         // console.log(Vimg);
-        // console.log(canva);
+        console.log(canva.value.clientHeight);
+        console.log(actHeight.value.height);
 
       }
     }
