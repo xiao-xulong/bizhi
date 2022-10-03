@@ -26,6 +26,8 @@ export default {
   },
   setup() {
     let route = useRoute();
+    let picAddress = ref('')
+    let fileList = ref([])
     picAddress.value = route.query.url
 
     onMounted(() => {
@@ -35,9 +37,6 @@ export default {
 
       imageToCanvas(canvas, picAddress.value);
     })
-    let picAddress = ref('')
-    let fileList = ref([])
-
     const imageToCanvas = function (canvas, url) {
       let img = new Image();
       img.src = url;
