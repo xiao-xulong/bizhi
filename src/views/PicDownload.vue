@@ -41,10 +41,11 @@ export default {
     const imageToCanvas = function (canvas, url) {
       let img = new Image();
       img.src = url;
+      // canva.value.clientHeight = Vimg.value.clientHeight
       img.onload = function () {
         let ctx = canvas.getContext("2d");
         // canvas.height = Vimg.value.clientHeight
-        canva.value.clientHeight = Vimg.value.clientHeight
+
         ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
