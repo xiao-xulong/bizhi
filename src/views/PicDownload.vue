@@ -42,7 +42,7 @@ export default {
       img.src = url;
       img.onload = function () {
         let ctx = canvas.getContext("2d");
-        // canvas.height = 800
+        canvas.height = Vimg.value.clientHeight
         ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // console.log(img.width + ":" + img.height);
       }
