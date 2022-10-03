@@ -51,7 +51,7 @@ export default {
         // ctx.scale(scale, scale);
 
         console.log(Vimg.value.clientHeight);
-        console.log(canva.value.clientHeight);
+        console.log(canva);
         canva.value.clientHeight = Vimg.value.clientHeight
       }
     }
