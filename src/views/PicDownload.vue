@@ -39,7 +39,8 @@ export default {
       img.src = url;
       img.onload = function () {
         let ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0);
+        canvas.height = img.height
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         // console.log(img.width + ":" + img.height);
       }
     }
@@ -83,7 +84,7 @@ export default {
 
   .pic {
     width: 90%;
-    height: auto;
+    // height: auto;
     margin-top: 20px;
     margin-left: 5%;
   }
