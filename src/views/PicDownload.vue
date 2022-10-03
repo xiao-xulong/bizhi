@@ -3,7 +3,7 @@
     <page-top></page-top>
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
-    <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress">
+    <!-- <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress"> -->
     <div class="fcan">
       <!-- <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas> -->
 
