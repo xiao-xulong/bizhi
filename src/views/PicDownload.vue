@@ -4,7 +4,7 @@
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
     <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress">
-    <canvas class="pic" id="myCanvas" style="background:#ffffff;">您的浏览器不支持Canvas!</canvas>
+    <canvas ref="canva" class="pic" id="myCanvas" style="background:#ffffff;">您的浏览器不支持Canvas!</canvas>
     <a id="bottom-1" class="downLoadBtn" :href="picAddress + '?response-content-type=application/octet-stream'"
       download>
 
@@ -30,6 +30,7 @@ export default {
     let fileList = ref([])
     picAddress.value = route.query.url
     const Vimg = ref()
+    const canva = ref()
     onMounted(() => {
       console.log('Vimg')
       console.log(Vimg)
@@ -47,7 +48,7 @@ export default {
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
-        // console.log(img.width + ":" + img.height);
+        console.log(canva.value.clientHeight);
       }
     }
 
@@ -63,7 +64,7 @@ export default {
 
 
     return {
-      fileList, picAddress, imageToCanvas, Vimg
+      fileList, picAddress, imageToCanvas, Vimg, canva
     }
   }
 }
