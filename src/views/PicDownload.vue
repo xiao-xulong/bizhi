@@ -69,7 +69,7 @@ export default {
 
 
     return {
-      fileList, picAddress, imageToCanvas, Vimg, canva
+      fileList, picAddress, imageToCanvas, Vimg, canva, actHeight
     }
   }
 }
