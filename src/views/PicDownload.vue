@@ -3,8 +3,7 @@
     <page-top></page-top>
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
-    <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress"
-      @click="preView">
+    <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress">
     <canvas class="pic" id="myCanvas" style="background:#ffffff;">您的浏览器不支持Canvas!</canvas>
     <a id="bottom-1" class="downLoadBtn" :href="picAddress + '?response-content-type=application/octet-stream'"
       download>
@@ -27,9 +26,10 @@ export default {
   },
   setup() {
     let route = useRoute();
+    const Vimg = ref()
     onMounted(() => {
-      const Vimg = ref()
-      console.log(Vimg)
+
+      console.log(Vimg.value)
       let canvas = document.getElementById("myCanvas");
       picAddress.value = route.query.url
       imageToCanvas(canvas, picAddress.value);
