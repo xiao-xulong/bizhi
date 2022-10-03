@@ -80,6 +80,7 @@ export default {
 
 <style scoped lang="less">
 .root {
+  overflow: hidden;
   background-color: #10171A;
   width: 100%;
   height: auto;
