@@ -4,7 +4,11 @@
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
     <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress">
-    <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
+    <div class="fcan">
+      <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
+
+    </div>
+
     <a id="bottom-1" class="downLoadBtn" :href="picAddress + '?response-content-type=application/octet-stream'"
       download>
 
@@ -98,10 +102,14 @@ export default {
     transform: translateX(-50%);
   }
 
-  .can {
+  .fcan {
     width: 90%;
     margin-top: 20px;
     margin-left: 5%;
+  }
+
+  .can {
+    width: 100%;
     height: v-bind('actHeight.height');
   }
 
