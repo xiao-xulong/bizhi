@@ -3,8 +3,8 @@
     <page-top></page-top>
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
-    <img class="pic" :src="picAddress" @click="preView">
-
+    <!-- <img class="pic" :src="picAddress" @click="preView"> -->
+    <canvas class="title_img" id="myCanvas" style="background:#ffffff;">您的浏览器不支持Canvas!</canvas>
     <a id="bottom-1" class="downLoadBtn" :href="picAddress + '?response-content-type=application/octet-stream'"
       download>
 
@@ -27,23 +27,36 @@ export default {
   setup() {
     let route = useRoute();
     onMounted(() => {
+      let canvas = document.getElementById("myCanvas");
       picAddress.value = route.query.url
+      imageToCanvas(canvas, picAddress.value);
     })
     let picAddress = ref('')
-
     let fileList = ref([])
-    let preView = function () {
-      ImagePreview([
-        route.query.url
-      ]);
 
+    const imageToCanvas = function (canvas, url) {
+      let img = new Image();
+      img.src = url;
+      img.onload = function () {
+        let ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        // console.log(img.width + ":" + img.height);
+      }
     }
+
+
+    // let preView = function () {
+    //   ImagePreview([
+    //     route.query.url
+    //   ]);
+
+    // }
 
 
 
 
     return {
-      fileList, picAddress, preView
+      fileList, picAddress, imageToCanvas
     }
   }
 }
