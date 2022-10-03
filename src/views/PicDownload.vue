@@ -97,15 +97,15 @@ export default {
   }
 
   .fcan {
-    position: relative;
-    width: 90%;
-    margin-top: 20px;
+    // position: relative;
+    // width: 90%;
+    // margin-top: 20px;
 
     // margin-left: 5%; 
-    .can {
-      width: 100%;
-      height: v-bind('actHeight.height');
-    }
+    // .can {
+    //   width: 100%;
+    //   height: v-bind('actHeight.height');
+    // }
   }
 
 
