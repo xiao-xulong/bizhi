@@ -47,14 +47,14 @@ export default {
         let ctx = canvas.getContext("2d");
         // canvas.height = Vimg.value.clientHeight
         actHeight.value.height = Vimg.value.clientHeight + 'px'
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
         // console.log(Vimg);
         console.log(Vimg.value.clientHeight);
         console.log(canva.value.clientHeight);
         console.log(actHeight.value.height);
-
+        console.log(canvas.height);
       }
     }
 
