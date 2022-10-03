@@ -26,12 +26,13 @@ export default {
   },
   setup() {
     let route = useRoute();
-    const Vimg = ref()
-    onMounted(() => {
+    picAddress.value = route.query.url
 
+    onMounted(() => {
+      const Vimg = ref()
       console.log(Vimg.value)
       let canvas = document.getElementById("myCanvas");
-      picAddress.value = route.query.url
+
       imageToCanvas(canvas, picAddress.value);
     })
     let picAddress = ref('')
