@@ -32,7 +32,7 @@ export default {
     const Vimg = ref()
     onMounted(() => {
       console.log('Vimg')
-      console.log(Vimg)
+      console.log(Vimg.value.clientHeight)
       let canvas = document.getElementById("myCanvas");
 
       imageToCanvas(canvas, picAddress.value);
@@ -42,8 +42,8 @@ export default {
       img.src = url;
       img.onload = function () {
         let ctx = canvas.getContext("2d");
-        canvas.height = 800
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        // canvas.height = 800
+        ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // console.log(img.width + ":" + img.height);
       }
     }
