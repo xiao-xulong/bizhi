@@ -98,7 +98,7 @@ export default {
     width: 90%;
     margin-top: 20px;
     margin-left: 5%;
-    height: v-bind('actHeight.height');
+    height: v-bind('actHeight.value.height');
   }
 }
 
