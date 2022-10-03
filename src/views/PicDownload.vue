@@ -28,7 +28,7 @@ export default {
     let route = useRoute();
     let picAddress = ref('')
     let fileList = ref([])
-    let actHeight = ref({ height: '0px', top: '500px' })
+    let actHeight = ref({ height: '100px', top: '500px' })
     picAddress.value = route.query.url
     const Vimg = ref()
     const canva = ref()
@@ -51,6 +51,7 @@ export default {
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
         // console.log(Vimg);
+        console.log(Vimg.value.clientHeight);
         console.log(canva.value.clientHeight);
         console.log(actHeight.value.height);
 
