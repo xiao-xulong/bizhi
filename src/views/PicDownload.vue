@@ -28,7 +28,7 @@ export default {
     let route = useRoute();
     let picAddress = ref('')
     let fileList = ref([])
-    let actHeight = ref({ height: '0px' })
+    let actHeight = ref({ height: '0px', top: '500px' })
     picAddress.value = route.query.url
     const Vimg = ref()
     const canva = ref()
@@ -47,7 +47,7 @@ export default {
         let ctx = canvas.getContext("2d");
         // canvas.height = Vimg.value.clientHeight
         actHeight.value.height = Vimg.value.clientHeight + 'px'
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
         // console.log(Vimg);
@@ -96,9 +96,9 @@ export default {
 
   .pic {
     width: 90%;
-    margin-top: 20px;
+    margin-top: v-bind('actHeight.top');
     margin-left: 5%;
-    height: v-bind('actHeight.value.height');
+    height: v-bind('actHeight.height');
   }
 }
 
