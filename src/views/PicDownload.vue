@@ -46,6 +46,8 @@ export default {
         let ctx = canvas.getContext("2d");
         canvas.height = Vimg.value.clientHeight
 
+
+        document.getElementById("myCanvas").height = Vimg.value.clientHeight;
         ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
