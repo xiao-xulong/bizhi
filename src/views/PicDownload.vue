@@ -49,8 +49,10 @@ export default {
         ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
+
         console.log(Vimg.value.clientHeight);
         console.log(canva.value.clientHeight);
+        canva.value.clientHeight = Vimg.value.clientHeight
       }
     }
 
