@@ -50,7 +50,6 @@ export default {
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         // let scale = window.devicePixelRatio;
         // ctx.scale(scale, scale);
-
         // console.log(Vimg);
         // console.log(canva);
 
