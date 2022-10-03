@@ -84,14 +84,8 @@ export default {
 
 <style scoped lang="less">
 .root {
-  overflow: hidden;
   background-color: #10171A;
   width: 100%;
-  height: auto;
-  background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-bdbeaf13-95b3-48c4-a13b-687691a23e5f/16822a8c-4b1b-4490-bcc1-bbdd744d5fa2.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
 
   .title_img {
     margin-top: 10px;
@@ -106,18 +100,19 @@ export default {
     position: relative;
     width: 90%;
     margin-top: 20px;
-    // margin-left: 5%;
+
+    // margin-left: 5%; 
+    .can {
+      width: 100%;
+      height: v-bind('actHeight.height');
+    }
   }
 
-  .can {
-    width: 100%;
-    height: v-bind('actHeight.height');
-  }
+
 
   .pic {
     width: 90%;
-    margin-top: 20px;
-    margin-left: 5%;
+
     height: auto;
   }
 }
