@@ -4,7 +4,7 @@
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
     <!-- <img class="pic" :src="picAddress" @click="preView"> -->
-    <canvas class="title_img" id="myCanvas" style="background:#ffffff;">您的浏览器不支持Canvas!</canvas>
+    <canvas class="pic" id="myCanvas" style="background:#ffffff;">您的浏览器不支持Canvas!</canvas>
     <a id="bottom-1" class="downLoadBtn" :href="picAddress + '?response-content-type=application/octet-stream'"
       download>
 
