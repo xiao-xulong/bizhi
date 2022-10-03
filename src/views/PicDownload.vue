@@ -29,10 +29,10 @@ export default {
     let picAddress = ref('')
     let fileList = ref([])
     picAddress.value = route.query.url
-
+    const Vimg = ref()
     onMounted(() => {
-      const Vimg = ref()
-      console.log(Vimg.value)
+
+      console.log(Vimg)
       let canvas = document.getElementById("myCanvas");
 
       imageToCanvas(canvas, picAddress.value);
