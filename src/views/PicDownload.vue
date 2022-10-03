@@ -5,7 +5,7 @@
     <img class="title_img" src="../assets/wallPicBackGround.png">
     <img class="pic" ref="Vimg" style="position: absolute; z-index: -100; visibility: hidden;" :src="picAddress">
     <div class="fcan">
-      <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
+      <!-- <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas> -->
 
     </div>
 
@@ -39,9 +39,9 @@ export default {
     onMounted(() => {
       console.log('Vimg')
       console.log(Vimg)
-      let canvas = document.getElementById("myCanvas");
+      // let canvas = document.getElementById("myCanvas");
 
-      imageToCanvas(canvas, picAddress.value);
+      // imageToCanvas(canvas, picAddress.value);
     })
     const imageToCanvas = function (canvas, url) {
       let img = new Image();
