@@ -96,7 +96,7 @@ export default {
 
   .pic {
     width: 90%;
-    margin-top: v-bind('actHeight.top');
+    margin-top: 20px;
     margin-left: 5%;
     height: v-bind('actHeight.height');
   }
