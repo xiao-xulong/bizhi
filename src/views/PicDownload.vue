@@ -60,7 +60,7 @@ export default {
 
 
     return {
-      fileList, picAddress, imageToCanvas
+      fileList, picAddress, imageToCanvas, Vimg
     }
   }
 }
