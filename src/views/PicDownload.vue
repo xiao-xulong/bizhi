@@ -103,9 +103,10 @@ export default {
   }
 
   .fcan {
+    position: relative;
     width: 90%;
     margin-top: 20px;
-    margin-left: 5%;
+    // margin-left: 5%;
   }
 
   .can {
