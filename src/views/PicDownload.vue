@@ -49,7 +49,8 @@ export default {
       // canva.value.clientHeight = Vimg.value.clientHeight
       img.onload = function () {
         let ctx = canvas.getContext("2d");
-        canvas.height = Vimg.value.clientHeight
+        canvas.width = Vimg.value.clientWidth * 2
+        canvas.height = Vimg.value.clientHeight * 2
         console.log(Vimg.value.clientWidth)
         console.log(Vimg.value.clientHeight)
         ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
