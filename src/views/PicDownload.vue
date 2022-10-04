@@ -50,7 +50,8 @@ export default {
       img.onload = function () {
         let ctx = canvas.getContext("2d");
         canvas.height = Vimg.value.clientHeight
-
+        console.log(Vimg.value.clientWidth)
+        console.log(Vimg.value.clientHeight)
         ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
         actHeight.value.height = Vimg.value.clientHeight + 'px'
 
