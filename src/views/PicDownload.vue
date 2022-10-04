@@ -53,7 +53,7 @@ export default {
         canvas.height = Vimg.value.clientHeight * 2
         console.log(Vimg.value.clientWidth)
         console.log(Vimg.value.clientHeight)
-        ctx.drawImage(img, 0, 0, canvas.width, Vimg.value.clientHeight);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         actHeight.value.height = Vimg.value.clientHeight + 'px'
 
         // let scale = window.devicePixelRatio;
