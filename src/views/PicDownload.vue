@@ -3,7 +3,7 @@
     <page-top></page-top>
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
-    <img class="pic" ref="Vimg" style="position: absolute; z-index: -100;" :src="picAddress">
+    <img class="pic" ref="Vimg" style=" z-index: -100;" :src="picAddress">
     <div class="fcan">
       <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
 
@@ -97,22 +97,24 @@ export default {
   }
 
   .fcan {
-    // position: relative;
-    // width: 90%;
-    // margin-top: 20px;
+    position: relative;
+    width: 90%;
+    margin-top: 20px;
 
-    // margin-left: 5%; 
-    // .can {
-    //   width: 100%;
-    //   height: v-bind('actHeight.height');
-    // }
+    margin-left: 5%;
+
+    .can {
+      width: 100%;
+      height: v-bind('actHeight.height');
+    }
   }
 
 
 
   .pic {
     width: 90%;
-
+    position: absolute;
+    left: 0;
     height: auto;
   }
 }
