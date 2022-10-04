@@ -98,18 +98,21 @@ export default {
     transform: translateX(-50%);
   }
 
-  .fcan {
-    position: relative;
+  // .fcan {
+  //   position: relative;
+  //   width: 90%;
+  //   margin-top: 20px;
+  //   margin-left: 5%;
+
+  .can {
     width: 90%;
     margin-top: 20px;
-
     margin-left: 5%;
-
-    .can {
-      width: 100%;
-      height: v-bind('actHeight.height');
-    }
+    // width: 100%;
+    height: v-bind('actHeight.height');
   }
+
+  // }
 
 
 
