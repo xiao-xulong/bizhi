@@ -4,10 +4,10 @@
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
     <img class="pic" ref="Vimg" style=" z-index: -100;" :src="picAddress">
-    <div class="fcan">
-      <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
 
-    </div>
+    <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
+
+
 
     <a id="bottom-1" class="downLoadBtn" :href="picAddress + '?response-content-type=application/octet-stream'"
       download>
