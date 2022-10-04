@@ -3,7 +3,7 @@
     <page-top></page-top>
 
     <img class="title_img" src="../assets/wallPicBackGround.png">
-    <img class="pic" ref="Vimg" style=" z-index: -100;" :src="picAddress">
+    <img class="pic" v-if="actHeight.height=='100px'" ref="Vimg" style=" z-index: -100;" :src="picAddress">
 
     <canvas ref="canva" class="can" id="myCanvas" style="background:transparent;">您的浏览器不支持Canvas!</canvas>
 
