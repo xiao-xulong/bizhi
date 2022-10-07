@@ -73,7 +73,7 @@ export default {
     const v = ref();
     //视频封面
     const poster = ref(
-      "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-bdbeaf13-95b3-48c4-a13b-687691a23e5f/a3ab6ff0-27da-4dce-baaf-a709961e4fb5.png"
+      "https://vkceyugu-backup.cdn.bspapp.com/VKCEYUGU-bdbeaf13-95b3-48c4-a13b-687691a23e5f/a3ab6ff0-27da-4dce-baaf-a709961e4fb5.png"
     );
     //哔哩哔哩电视图标
     const icon =
